@@ -6,12 +6,17 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "db": "nuxt db generate"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.0",
     "@nuxt/content": "^3.10.0",
+    "@nuxthub/core": "^0.10.4",
     "@tailwindcss/vite": "^4.1.18",
     "better-sqlite3": "^12.5.0",
+    "drizzle-kit": "^0.31.8",
+    "drizzle-orm": "^0.45.1",
     "nuxt": "^4.2.2",
     "tailwindcss": "^4.1.18"
   }
