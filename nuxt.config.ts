@@ -24,8 +24,32 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+      wrangler: {
+        observability: {
+          enabled: true,
+        },
+        assets: {
+          directory: "./.output/public/",
+          binding: "ASSETS"
+        },
+        // durable_objects: {
+        //   bindings: [
+        //     {
+        //       name: "$DurableObject",
+        //       class_name: "$DurableObject"
+        //     }
+        //   ]
+        // }
+      }
+    },
     experimental: {
       websocket: true
     }
+  },
+  routeRules: {
+    '/': { prerender: false }
   }
 })
