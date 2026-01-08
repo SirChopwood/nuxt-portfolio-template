@@ -36,6 +36,14 @@ export default defineNuxtConfig({
           directory: "./.output/public/",
           binding: "ASSETS"
         },
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_id: 'cefba871-7dfd-4a4c-b1cb-1c3b10516b62',
+            migrations_table: "_hub_migrations",
+            migrations_dir: ".output/server/db/migrations/",
+          }
+        ]
         // durable_objects: {
         //   bindings: [
         //     {
