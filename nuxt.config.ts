@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       dialect: 'sqlite',
       driver: 'd1',
       connection: { databaseId: 'cefba871-7dfd-4a4c-b1cb-1c3b10516b62' },
-      migrationsDirs: [".output/server/db/migrations/"]
+      migrationsDirs: [".output/server/db/migrations/sqlite/"],
     },
   },
   $development: {
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
             binding: 'DB',
             database_id: 'cefba871-7dfd-4a4c-b1cb-1c3b10516b62',
             migrations_table: "_hub_migrations",
-            migrations_dir: ".output/server/db/migrations/",
+            migrations_dir: ".output/server/db/migrations/sqlite/",
           }
         ]
         // durable_objects: {
