@@ -22,5 +22,10 @@ export default defineNuxtConfig({
     hub: {
       db: "sqlite"
     }
+  },
+  nitro: {
+    experimental: {
+      websocket: true
+    }
   }
 })
